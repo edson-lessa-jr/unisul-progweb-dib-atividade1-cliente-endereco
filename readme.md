@@ -17,7 +17,7 @@ Relizar o registro de cliente com seu respectivo endereço.
 
 ## Prazo
 A Atividade deverá ser desenvolvida na sala de aula as 4º
-Data de apresentação 20/10.
+Data de apresentação 13/10.
 
 ### Informações adicionais
 * As classes concretas já estão definidas
