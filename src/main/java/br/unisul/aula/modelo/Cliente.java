@@ -1,10 +1,17 @@
 package br.unisul.aula.modelo;
 
+import javax.persistence.*;
+
+@Entity
 public class Cliente {
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nome;
     private String complemento;
     private Integer numero;
+    @OneToOne
+    @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
     public Cliente() {

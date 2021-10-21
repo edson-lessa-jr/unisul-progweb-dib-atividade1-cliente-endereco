@@ -6,16 +6,18 @@
     <persistence-unit name="clientes">
         <properties>
             <property name="javax.persistence.jdbc.driver"
-                      value=""/> <!-- DB Driver -->
+                      value="org.postgresql.Driver"/> <!-- DB Driver -->
             <property name="javax.persistence.jdbc.url"
-                      value=""/> <!-- BD Mane -->
-            <property name="javax.persistence.jdbc.user" value=""/> <!-- DB User -->
-            <property name="javax.persistence.jdbc.password" value=""/> <!-- DB Password -->
-
+                      value="jdbc:postgresql://localhost:6543/progwebdib?charSet=LATIN1;"/> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.user" value="postgres"/> <!-- DB User -->
+            <property name="javax.persistence.jdbc.password" value="postgres"/> <!-- DB Password -->
+            <property name="hibernate.connection.characterEncoding" value="utf8" />
+            <property name="hibernate.connection.charSet" value="UTF-8"/>
+            <property name="hibernate.connection.useUnicode" value="true" />
             <property name="hibernate.hbm2ddl.auto" value="update"/> <!-- create / create-drop / update -->
 
             <property name="hibernate.dialect"
-                      value=""/> <!-- DB Dialect
+                      value="org.hibernate.dialect.PostgreSQL10Dialect"/> <!-- DB Dialect
                       No postgres é org.hibernate.dialect.PostgreSQL10Dialect-->
 
             <property name="hibernate.show_sql" value="false"/> <!-- Show SQL in console -->

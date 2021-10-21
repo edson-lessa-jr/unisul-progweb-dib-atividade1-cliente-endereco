@@ -1,11 +1,17 @@
 package br.unisul.aula.modelo;
 
+import javax.persistence.*;
+
+@Entity
 public class Endereco {
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String logradouro;
     private Integer cep;
     private String bairro;
     private String cidade;
+    @Enumerated(EnumType.STRING)
     private UnidadeFederativa uf;
 
     public Endereco() {

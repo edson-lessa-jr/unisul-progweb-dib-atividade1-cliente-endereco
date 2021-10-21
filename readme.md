@@ -1,31 +1,23 @@
-# Atividade Serviços
+# Atividade Serviços - Primeira nota
 ## Objetivo
-Criar um backend em que uma api possa realizar chamadas que retornem formatos JSON.
+Criar um servlet de consulta para que seja possível visualizar os dados 
+armazenados no banco de dados
 
 ## Problema
-Relizar o registro de cliente com seu respectivo endereço.
-**Possibilitar**
-* Listar todos os clientes cadastrados.
-* Cadastrar novos clientes
-* Alterar clientes
-* Excluir clientes
-* Cadastro de novos endereços
-* Listar todos os endereços
-* Consultar o endereço por CEP. 
-(Considerar um CEP por registro)
-* Alterar endereços
+Realizar uma consulta por cidade e apresentar todos os clientes da cidade consultada
+Seguindo a seguinte informação: consultar por nome da cidade e retornar:
+{
+"cidade": "Desterro",
+"uf": "SC"
+"clientes": [
+    {"id": 1, "nome": "Rodrigo"},
+    {"id": 2, "nome": "João"}
+  ]
+}
 
 ## Prazo
-A Atividade deverá ser desenvolvida na sala de aula as 4º
-Data de apresentação 13/10.
+A Atividade deverá ser desenvolvida em casa e será entregue 
+Prazo 03/11/2021. 
 
 ### Informações adicionais
-* As classes concretas já estão definidas
-* As dependências já estão configuradas, MENOS O BANCO DE DADOS
-* O banco de dados é de sua escolha
-* Deverá ser desenvolvido
-1. Os endpoints necessários
-2. As consultas necessárias
-3. Os DTOs necessários
-4. Deve ser configurado o persistence.xml para adequar a sua realidade 
-
+* Utilizar o projeto atual como base, pode ser modificado para atender as necessidades.
