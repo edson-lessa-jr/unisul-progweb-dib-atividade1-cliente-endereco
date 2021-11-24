@@ -1,7 +1,7 @@
 package br.unisul.aula.servlet;
 
 import br.unisul.aula.banco.EnderecoDAO;
-import br.unisul.aula.dtocliente.EnderecoDTO;
+import br.unisul.aula.dtos.EnderecoDTO;
 import br.unisul.aula.modelo.Endereco;
 import com.google.gson.Gson;
 

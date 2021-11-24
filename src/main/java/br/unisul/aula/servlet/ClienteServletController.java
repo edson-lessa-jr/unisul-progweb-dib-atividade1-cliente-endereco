@@ -1,7 +1,7 @@
 package br.unisul.aula.servlet;
 
 import br.unisul.aula.banco.ClienteDAO;
-import br.unisul.aula.dtocliente.ClienteDTO;
+import br.unisul.aula.dtos.ClienteDTO;
 import br.unisul.aula.modelo.Cliente;
 import com.google.gson.Gson;
 
